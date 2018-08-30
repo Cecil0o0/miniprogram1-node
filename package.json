@@ -1,0 +1,20 @@
+{
+  "name": "miniprogram1-node",
+  "version": "1.0.0",
+  "description": "模特信息管理node端",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src",
+    "prebuild": "",
+    "build": "pm2 src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cecil0o0",
+  "license": "BSD",
+  "dependencies": {
+    "koa": "^2.5.2",
+    "koa-cors": "^0.0.16",
+    "koa-router": "^7.4.0",
+    "lowdb": "^1.0.0"
+  }
+}
