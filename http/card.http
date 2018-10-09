@@ -1,0 +1,24 @@
+@prefix = http://localhost:3100/v1
+### post
+POST {{prefix}}/card HTTP/1.1
+Date: {{$guid}}
+Content-Type: application/json
+
+{
+  "label": "tttt"
+}
+
+### get
+GET {{prefix}}/cards?name=1 HTTP/1.1
+
+### delete
+DELETE {{prefix}}/card/rDe4EN4tz HTTP/1.1
+
+### PUT
+PUT {{prefix}}/card HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "1",
+  "label": "updated"
+}

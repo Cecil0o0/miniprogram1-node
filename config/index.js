@@ -3,7 +3,7 @@ const prod = require('./prod')
 
 module.exports = Object.assign(
   {
-    port: 3000
+    port: 3100
   },
   process.env.NODE_ENV === 'production' ? prod : dev
 )

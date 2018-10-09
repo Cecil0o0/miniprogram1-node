@@ -1,5 +1,28 @@
 {
-  "user": {
-    "name": 1
-  }
+  "cards": [
+    {
+      "id": "1",
+      "label": "updated"
+    },
+    {
+      "label": "tttt",
+      "id": "68c71768-27ac-47f2-a3fd-21dc6376995c"
+    },
+    {
+      "label": "tttt",
+      "id": "761d70fc-4fa4-4c96-bd9e-53e1b5e46182"
+    },
+    {
+      "label": "tttt",
+      "id": "773954d4-0f5d-457f-be02-e15995c8bad0"
+    },
+    {
+      "label": "tttt",
+      "id": "4b57c4c1-9e38-4f10-bc2e-10793e257322"
+    },
+    {
+      "label": "tttt",
+      "id": "0a3305ff-a32c-4f69-86c4-fbdb18208ec4"
+    }
+  ]
 }
