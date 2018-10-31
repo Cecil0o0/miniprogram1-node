@@ -1,5 +1,7 @@
-const CardService = require('./card')
-
 module.exports = {
-  CardService
+  CardService: require('./card'),
+  ModelService: require('./model'),
+  UserService: require('./user'),
+  AdviceService: require('./advice'),
+  WechatTemplateIdService: require('./wechatTemplateId')
 }
