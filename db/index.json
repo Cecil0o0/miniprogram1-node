@@ -2,19 +2,31 @@
   "models": [
     {
       "id": "0a3305ff-a32c-4f69-86c4-fbdb18208ec3",
-      "name": "某某某",
-      "sex": 0,
+      "name": "额额额额",
+      "sex": 1,
       "age": 20,
       "height": 165,
-      "weight": 50,
-      "bwh": [88, 88, 88],
-      "city": ["北京市", "无", "无"],
+      "weight": 55,
+      "bwh": [
+        77,
+        80,
+        77
+      ],
+      "city": [
+        "内蒙古自治区",
+        "乌海市",
+        "无"
+      ],
       "school": "北京电影学院",
       "exp": "三年平面模特",
-      "specialities": ["唱歌", "跳舞", "书法"],
-      "intro": "坚持不一定会胜利，放弃不一定是认输，人生有很多时候需要的不仅仅是执着，更是回眸一笑的洒脱，加油！",
+      "specialities": [
+        "唱歌",
+        "跳舞",
+        "书法"
+      ],
+      "intro": "这是一条测试介绍！！！S大",
       "popularity": 1258,
-      "subscribe": 225874,
+      "subscribe": 22222,
       "idVerify": {
         "verified": true,
         "realName": "某某某",
@@ -25,9 +37,39 @@
       },
       "poster": "https://www.10wallpaper.com/wallpaper/1366x768/1609/kenza_mel_beach_photography-Beauty_poster_wallpaper_1366x768.jpg",
       "avatar": "https://wx4.sinaimg.cn/orj360/96a79eebgy1fpo3ig1w9qj20c80c83zr.jpg",
-      "attentions": [],
+      "attentions": [
+        {
+          "id": 0,
+          "avatar": "https://wx4.sinaimg.cn/orj360/96a79eebgy1fpo3ig1w9qj20c80c83zr.jpg",
+          "name": "你好额",
+          "popularity": 1258,
+          "subscribe": 1234123,
+          "intro": "坚持不很多时候需要的不仅仅是执着，更是回眸一笑的洒脱，加油！"
+        },
+        {
+          "id": 0,
+          "avatar": "https://wx4.sinaimg.cn/orj360/96a79eebgy1fpo3ig1w9qj20c80c83zr.jpg",
+          "name": "某某某",
+          "popularity": 1258,
+          "subscribe": 22123,
+          "intro": "坚持不一定会胜利，放弃不一定是认输，人生有很多时候需要的不仅仅是执着，更是回眸一笑的洒脱，加油！"
+        },
+        {
+          "id": 0,
+          "avatar": "https://wx4.sinaimg.cn/orj360/96a79eebgy1fpo3ig1w9qj20c80c83zr.jpg",
+          "name": "测试1111",
+          "popularity": 1258,
+          "subscribe": 123321,
+          "intro": "一笑的洒脱，加油！"
+        }
+      ],
       "photos": [],
-      "video": "",
+      "video": {
+        "name": "wxa324150d4ca3f515.o6zAJs-Sk_QbUaOQtH19-PKIDwjQ.vn0Zv9ufyC7pa843e02edf268b7b9a1ddceda3bdf288.mp4",
+        "type": "video/mp4",
+        "size": 1210817,
+        "lastModifiedDate": "2018-11-01T15:41:37.674Z"
+      },
       "mobile": "",
       "actingExperience": {
         "other": "2013年，范冰冰蝉联2014福布斯中国名人榜第一位，5月23日，布莱恩·辛格导演，休·杰克曼；詹姆斯·麦卡沃伊；迈克尔·法斯宾德主演的电影《X战警：逆转未来》全球同步上映，范冰冰在其中饰演“闪烁女Blink”一角。",
@@ -63,21 +105,21 @@
   ],
   "banners": [
     {
-      "src": "Banner1",
+      "src": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541090843993&di=4f5fa5408d77c98694121fc41d57be0e&imgtype=0&src=http%3A%2F%2Fg.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F5243fbf2b211931376d158d568380cd790238dc1.jpg",
       "jump": {
         "type": "web",
         "url": ""
       }
     },
     {
-      "src": "Banner1",
+      "src": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541090843993&di=4f5fa5408d77c98694121fc41d57be0e&imgtype=0&src=http%3A%2F%2Fg.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F5243fbf2b211931376d158d568380cd790238dc1.jpg",
       "jump": {
         "type": "web",
         "url": ""
       }
     },
     {
-      "src": "Banner1",
+      "src": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541090843993&di=4f5fa5408d77c98694121fc41d57be0e&imgtype=0&src=http%3A%2F%2Fg.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F5243fbf2b211931376d158d568380cd790238dc1.jpg",
       "jump": {
         "type": "web",
         "url": ""

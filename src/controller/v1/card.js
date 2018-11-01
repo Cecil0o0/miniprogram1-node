@@ -6,7 +6,6 @@ module.exports = {
   mount(router) {
     router.get('/cards', async(ctx, next) => {
       ctx.body = CardService.getCards()
-      console.log(ctx.request.headers)
       next()
     })
 

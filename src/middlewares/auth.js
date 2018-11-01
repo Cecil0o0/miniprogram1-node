@@ -1,7 +1,5 @@
-function auth(ctx, next) {
-  return next()
-}
-
 module.exports = (options) => {
-  return auth
+  return async (ctx, next) => {
+    await next()
+  }
 }

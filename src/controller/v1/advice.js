@@ -6,7 +6,6 @@ module.exports = {
   mount(router) {
     router.get('/advices', async(ctx, next) => {
       ctx.body = AdviceService.getAdvices()
-      console.log(ctx.request.headers)
       next()
     })
 

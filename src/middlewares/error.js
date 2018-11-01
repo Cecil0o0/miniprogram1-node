@@ -4,6 +4,10 @@ module.exports = () => {
       await next()
     } catch(e) {
       console.error(e)
+      ctx.body = ctx.returnWrapper({
+        success: false,
+        reason: 'system error'
+      })
     }
   }
 }

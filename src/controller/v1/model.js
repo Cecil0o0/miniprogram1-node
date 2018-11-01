@@ -6,13 +6,15 @@ module.exports = {
   mount(router) {
     router.get('/models', async(ctx, next) => {
       ctx.body = ModelService.getModels()
-      console.log(ctx.request.headers)
       next()
     })
 
     router.get('/model/:id', async(ctx, next) => {
       const { id } = ctx.params
-      ctx.body = await ModelService.getModel(id)
+      const data = await ModelService.getModel(id)
+      ctx.body = ctx.returnWrapper({
+        data
+      })
       next()
     })
 
@@ -31,7 +33,10 @@ module.exports = {
 
     router.put('/model', async(ctx, next) => {
       const model = ctx.request.body
-      ctx.body = await ModelService.updateModel(model)
+      const data = await ModelService.updateModel(model)
+      ctx.body = ctx.returnWrapper({
+        data
+      })
       next()
     })
   }

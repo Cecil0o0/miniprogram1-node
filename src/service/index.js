@@ -3,5 +3,7 @@ module.exports = {
   ModelService: require('./model'),
   UserService: require('./user'),
   AdviceService: require('./advice'),
-  WechatTemplateIdService: require('./wechatTemplateId')
+  WechatTemplateIdService: require('./wechatTemplateId'),
+  BannerService: require('./banner'),
+  UploadService: require('./upload')
 }

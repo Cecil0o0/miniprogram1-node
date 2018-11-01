@@ -6,7 +6,6 @@ module.exports = {
   mount(router) {
     router.get('/users', async(ctx, next) => {
       ctx.body = UserService.getUsers()
-      console.log(ctx.request.headers)
       next()
     })
 
