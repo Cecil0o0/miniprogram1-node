@@ -5,7 +5,7 @@ function getModels() {
 }
 
 function getModel(id) {
-  return db.get('models').find({ id }).value()
+  return db.get('models').find({ id }).cloneDeep().value()
 }
 
 function addModel(model) {
