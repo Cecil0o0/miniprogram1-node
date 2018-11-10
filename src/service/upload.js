@@ -1,12 +1,13 @@
 const db = require('../db-driver')
 const upload = require('../utils/upload')
-const { pick } = require('../utils/helper')
+const { pick, getIPAdress } = require('../utils/helper')
+const { port } = require('../../config')
 
 async function uploadFile(file) {
   await upload(file)
   const video = pick(file, ['name', 'type', 'size', 'lastModifiedDate'])
-  let id = await db.get('uploads').insert(video).write().id
-  return id
+  let name = await db.get('uploads').insert(video).write().name
+  return `//${getIPAdress()}:${port}/upload/${name}`
 }
 
 function getUpload(id) {

@@ -5,32 +5,46 @@ const { AdviceService } = services
 module.exports = {
   mount(router) {
     router.get('/advices', async(ctx, next) => {
-      ctx.body = AdviceService.getAdvices()
+      let data = AdviceService.getAdvices()
+      ctx.body = ctx.returnWrapper({
+        data
+      })
       next()
     })
 
     router.get('/advice/:id', async(ctx, next) => {
       const { id } = ctx.params
-      ctx.body = await AdviceService.getAdvice(id)
+      let data = await AdviceService.getAdvice(id)
+      ctx.body = ctx.returnWrapper({
+        data
+      })
       next()
     })
 
     router.post('/advice', async (ctx, next) => {
       const advice = ctx.request.body
-      let res = await AdviceService.addAdvice(advice)
-      ctx.body = res
+      let data = await AdviceService.addAdvice(advice)
+      ctx.body = ctx.returnWrapper({
+        data
+      })
       next()
     })
 
     router.delete('/advice/:id', async(ctx, next) => {
       const { id } = ctx.params
-      ctx.body = await AdviceService.removeAdvice(id)
+      let data = await AdviceService.removeAdvice(id)
+      ctx.body = ctx.returnWrapper({
+        data
+      })
       next()
     })
 
     router.put('/advice', async(ctx, next) => {
       const advice = ctx.request.body
-      ctx.body = await AdviceService.updateAdvice(advice)
+      let data = await AdviceService.updateAdvice(advice)
+      ctx.body = ctx.returnWrapper({
+        data
+      })
       next()
     })
   }

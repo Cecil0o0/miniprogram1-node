@@ -5,17 +5,16 @@ const { ModelService, UploadService } = services
 module.exports = {
   mount(router) {
     router.get('/models', async(ctx, next) => {
-      ctx.body = ModelService.getModels()
+      let data = await ModelService.getModels()
+      ctx.body = ctx.returnWrapper({
+        data
+      })
       next()
     })
 
     router.get('/model/:id', async(ctx, next) => {
       const { id } = ctx.params
       const data = await ModelService.getModel(id)
-      // 拼装相册数据
-      data.photos = UploadService.getUploads(data.photos)
-      // 拼装海报数据
-      data.posters = UploadService.getUploads(data.posters)
       ctx.body = ctx.returnWrapper({
         data
       })
