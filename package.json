@@ -10,12 +10,14 @@
   "author": "Cecil0o0",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "koa": "^2.5.2",
     "koa-body": "^4.0.4",
     "koa-cors": "^0.0.16",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
     "lodash-id": "^0.14.0",
-    "lowdb": "^1.0.0"
+    "lowdb": "^1.0.0",
+    "minimatch": "^3.0.4"
   }
 }

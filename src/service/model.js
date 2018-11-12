@@ -1,7 +1,12 @@
 const db = require('../db-driver')
 
-function getModels() {
-  return db.get('models')
+function getModels(cloneDeep = false) {
+  let models = db.get('models')
+  if (cloneDeep) {
+    return models.cloneDeep().value()
+  } else {
+    return models.value()
+  }
 }
 
 function getModel(id) {

@@ -8,6 +8,10 @@ function getUser(id) {
   return db.get('users').find({ id }).value()
 }
 
+function getUserByEntry(user) {
+  return db.get('users').find(user).value()
+}
+
 function addUser(user) {
   if (!user) return
   return db.get('users').insert(user).write()
@@ -28,5 +32,6 @@ module.exports = {
   getUser,
   addUser,
   removeUser,
-  updateUser
+  updateUser,
+  getUserByEntry
 }
