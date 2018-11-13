@@ -44,6 +44,7 @@ module.exports = {
       next()
     })
 
+    // 人气榜排名
     router.get('/model/hot', async(ctx, next) => {
       const { page, size } = ctx.request.query
       let models = db.get('models').sortBy('popularity').reverse().cloneDeep().value()
@@ -54,9 +55,10 @@ module.exports = {
           total: models.length
         }
       })
-      next()
+      await next()
     })
 
+    // 赞助榜排名
     router.get('/model/sponsor', async(ctx, next) => {
       const { page, size } = ctx.request.query
       let models = db.get('models').sortBy('subscribe').reverse().cloneDeep().value()
@@ -67,7 +69,17 @@ module.exports = {
           total: models.length
         }
       })
-      next()
+      await next()
+    })
+
+    // 批量获取models信息
+    router.post('/models', async(ctx, next) => {
+      const { ids } = ctx.request.body
+      let data = db.get('models').filter(model => ids.includes(model.id)).value()
+      ctx.body = ctx.returnWrapper({
+        data
+      })
+      await next()
     })
   }
 }
