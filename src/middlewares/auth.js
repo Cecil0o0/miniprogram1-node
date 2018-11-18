@@ -2,6 +2,7 @@ const sessionDB = require('.././db-driver/session')
 const minimatch = require('minimatch')
 
 let whiteRule = [
+  '/*/upload',
   '/*/login'
 ]
 

@@ -12,5 +12,6 @@ require('./banner').mount(v1Router)
 require('./upload').mount(v1Router)
 require('./login').mount(v1Router)
 require('./hf').mount(v1Router)
+require('./search').mount(v1Router)
 
 module.exports = v1Router

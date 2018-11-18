@@ -15,10 +15,10 @@ module.exports = {
         UserService.addUser({
           openId
         })
-        // 自动添加用户角色
+        // 自动添加用户角色，默认角色为模特用户
         RoleOpenIdRelationsService.addRoleOpenIdRelation({
           openId,
-          roleId: 'role1'
+          roleId: 'role2'
         })
       } else {
         // 找到关联的角色
