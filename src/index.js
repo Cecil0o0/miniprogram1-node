@@ -11,6 +11,9 @@ middlewares.mount(app)
 // 挂载路由
 router.mount(app)
 
+// 启动全局定时器
+require('./other/timers')()
+
 app.listen(port, () => {
   console.log('server is listening at port ' + port)
 })
