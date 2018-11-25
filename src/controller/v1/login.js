@@ -1,6 +1,7 @@
 const services = require('../../service')
+const defaultModelInfo = require('../../defaultData')
 
-const { LoginService, UserService, RoleService, RoleOpenIdRelationsService } = services
+const { LoginService, UserService, RoleService, RoleOpenIdRelationsService, ModelService } = services
 
 module.exports = {
   mount(router) {
@@ -20,6 +21,8 @@ module.exports = {
           openId,
           roleId: 'role2'
         })
+        // 自动添加模特信息
+        ModelService.addModel(defaultModelInfo.model)
       }
       // 找到关联的角色
       let relation = RoleOpenIdRelationsService.getRoleOpenIdRelation({
