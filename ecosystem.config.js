@@ -2,10 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'modelService',
-      script: __dirname + '/../src/index.js',
-      watch: false,
-      exec_mode: 'fork',
-      instances: 1,
+      script: 'src/index.js',
       env: {
         NODE_ENV: 'development'
       },
