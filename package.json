@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "nodemon src",
-    "deploy": "pm2 start src/index.js -n modelServer",
+    "deploy": "NODE_ENV=production pm2 start src/index.js -n modelServer",
     "deploy:stop": "pm2 delete modelServer",
     "deploy:restart": "pm2 restart modelServer"
   },
