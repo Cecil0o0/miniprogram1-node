@@ -1,6 +1,6 @@
 module.exports = {
   model: {
-    name: '请修改名称',
+    name: '名称',
     sex: 0,
     age: 20,
     height: 165,

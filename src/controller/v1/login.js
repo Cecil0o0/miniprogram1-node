@@ -13,7 +13,7 @@ module.exports = {
       if (data.isNew) {
         // 新用户登陆后逻辑
         // 自动创建新用户
-        UserService.addUser({
+        const user = UserService.addUser({
           openId
         })
         // 自动添加用户角色，默认角色为模特用户
@@ -22,7 +22,7 @@ module.exports = {
           roleId: 'role2'
         })
         // 自动添加模特信息
-        ModelService.addModel(defaultModelInfo.model)
+        ModelService.addModel(Object.assign({ id: user.id }, defaultModelInfo.model))
       }
       // 找到关联的角色
       let relation = RoleOpenIdRelationsService.getRoleOpenIdRelation({
