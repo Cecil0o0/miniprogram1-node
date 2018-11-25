@@ -116,3 +116,4 @@ typings/
 
 live/upload/**
 !live/upload/.gitkeep
+db/**

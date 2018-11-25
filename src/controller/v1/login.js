@@ -20,16 +20,15 @@ module.exports = {
           openId,
           roleId: 'role2'
         })
-      } else {
-        // 找到关联的角色
-        let relation = RoleOpenIdRelationsService.getRoleOpenIdRelation({
-          openId
-        })
-        // 找到角色信息
-        role = RoleService.getRole({
-          id: relation.roleId
-        })
       }
+      // 找到关联的角色
+      let relation = RoleOpenIdRelationsService.getRoleOpenIdRelation({
+        openId
+      })
+      // 找到角色信息
+      role = RoleService.getRole({
+        id: relation.roleId
+      })
       // 拿用户id
       let userId = UserService.getUserByEntry({ openId }).id
 
